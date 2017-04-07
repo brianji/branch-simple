@@ -23,6 +23,7 @@ var API_KEYS = {
 app.expose(API_KEYS, "API_KEYS");
 
 app.get("/", function(req, res) {
+    /* a comment */
     var friends = ["A", "B", "C"];
     res.expose(friends, "friends");
     res.render("home", { friends: friends });
